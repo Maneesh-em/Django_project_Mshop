@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block title%}
+Mshop | Home 
+{% endblock %}
+
+{% block content %}
+{%  comment %}
+ <ol>
+    {% for product in products %}
+
+    <li>{{product.name}} - Rs. {{product.price}}</li>
+
+    {% endfor %}
+</ol>
+{% endcomment %}
+<div class = "container">
+    {% for product in products %}
+    <div class="card" style="width: 14rem;">
+        <img src="{{product.img.url}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">
+            <a href="">
+                {{product.name}}
+            </a>
+          </h5>
+          <p class="card-text">
+                {{product.desc}}
+          </p>
+          <a href="#" class="btn btn-primary">add to cart</a>
+        </div>
+      </div>
+      {% endfor %}
+</div>
+
+{% endblock %}

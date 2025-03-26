@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    header{
+        nav.navbar{
+            border-radius: 10px;
+        }
+    }
+    .container{
+        display: flex;
+        .card{
+            background-color: aquamarine;
+            height: 300px;
+            img{
+                background-color: black;
+                height: 200px;
+                transition-duration: .5s;
+            }
+            img:hover{
+                transform: scale(.9);
+                transition-duration: .5s;
+            }
+            .card-body{
+                h5{
+                    a{
+                        color: black;
+                    }
+                }
+               
+                p{
+                    -webkit-box-orient: vertical;
+                     display: -webkit-box;
+                     -webkit-line-clamp: 2;
+                     overflow: hidden;
+                     text-overflow: ellipsis;
+                     white-space: normal;
+
+                }
+                a.btn{
+                    
+                }
+                a.btn:active{
+                    background-color: red;
+                    color: black;
+                }
+            }
+
+        }
+    }
+}
