@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: bisque;
+    background-color: rgb(42, 136, 23);
     header{
         nav.navbar{
             border-radius: 10px;
+            font-family:fan
         }
     }
     .container{
@@ -15,6 +16,8 @@ body{
         .card{
             background-color: aquamarine;
             height: 300px;
+            border-radius: 15px;
+            
             img{
                 background-color: black;
                 height: 200px;

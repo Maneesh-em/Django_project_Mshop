@@ -16,18 +16,19 @@ Mshop | Home
 {% endcomment %}
 <div class = "container">
     {% for product in products %}
-    <div class="card" style="width: 14rem;">
+    <div class="card" style="width: 22rem;">
+      <blockquote class="blockquote mb-0">    </blockquote>
         <img src="{{product.img.url}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">
-            <a href="">
+            <a href="{% url 'prod_details' product.pk %}">
                 {{product.name}}
             </a>
           </h5>
           <p class="card-text">
                 {{product.desc}}
           </p>
-          <a href="#" class="btn btn-primary">add to cart</a>
+          <a href="#" class="btn btn-primary">Add Do Cart</a>
         </div>
       </div>
       {% endfor %}
